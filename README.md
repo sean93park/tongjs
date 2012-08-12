@@ -45,6 +45,10 @@ You should check below font file exist
 	make
 	./tongjs tongsdl
 
+to disable debug and script messages
+
+    cmake .. -DENABLE_DEBUG=0 -DENABLE_SCRIPTMSG=0
+	make
 ### Supported platforms ?
 
 I worked with Ubuntu 10.10 and 12.04 and I guess it work with other Linux distributions.
