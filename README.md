@@ -70,4 +70,5 @@ MIT License : http://opensource.org/licenses/mit-license.php
 ### Etc
 
 Codes were from and reference from all around the internet and especially from
-https://github.com/creationix/node-sdl, it was a great SDL reference with v8.
+https://github.com/creationix/node-sdl, it was a great SDL reference with v8 and 
+http://www.enlightenment.org/ elev8 project.

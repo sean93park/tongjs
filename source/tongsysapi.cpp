@@ -1,5 +1,6 @@
 /*
 portion copy from https://github.com/joyent/node
+portion copy from http://www.enlightenment.org elev8 project
 */
 /*
 Copyright Joyent, Inc. and other Node contributors.
@@ -338,6 +339,7 @@ bool tong::module_js_load ( char *module_name, Handle<Object> name_space, Contex
 	if (context_use_rule == CREATE_NEW_CONTEXT)
 	{
 		// Fix: global type
+		v8::Handle<v8::ObjectTemplate> global = v8::ObjectTemplate::New();
 		global->Set(String::NewSymbol("exports"), name_space);
 		mod_context = Context::New(NULL, global);
 		mod_context->Enter();
